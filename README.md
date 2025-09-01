@@ -43,6 +43,7 @@ This project transforms a data narrative about the **2024 Syracuse University Me
 
 * Iterated prompts to force the LLM to cite only the provided stats and to avoid inventing historical comparisons.
 
+
 **Files in this repository (important ones)**
 
 README.md — this file (overview + run instructions)
@@ -75,11 +76,9 @@ video/ — lipsynced output, short clip
 python -m venv venv
 .\venv\Scripts\Activate.ps1   # PowerShell
 
-
 3. Install Python dependencies:
 
 pip install pyttsx3 pydub
-
 
 4. Install ffmpeg and ensure it’s on your PATH:
 
@@ -92,8 +91,8 @@ python code/split_script.py
 python code/tts_pyttsx3.py
 python code/mixdown_pydub.py
 
-
 6. Video (Google Gemini Veo): Open the Google Gemini Veo AI and write a prompt to convert your audio file into a video format.
+
 
 **Challenges & bottlenecks (what I ran into)**
 1. Environment restrictions (online notebooks)
@@ -123,3 +122,20 @@ python code/mixdown_pydub.py
 7. Ethical considerations
 
 * I avoided impersonating real people, used a synthetic/neutral voice and avatar, and clearly labeled the outputs as AI-generated. This is documented in the repo.
+
+
+**Final output (what I produced)**
+
+1. Audio interview: audio/final_mix.wav — a full interview audio file matching the scripted dialogue.
+
+2. Deepfake video: One short test clip (video/lipsynced_8s.mp4) of 8 seconds demonstrating lipsync between the synthetic audio and a neutral avatar. I could not generate a longer video due to subscription/purchase/finance constraints (paid services or extra GPU time were required for longer/higher-quality output).
+
+
+**Ethics, labeling, and responsible use**
+
+1. All media are clearly labeled AI-generated / synthetic.
+
+2. Do not use this repo to impersonate real individuals.
+
+3. Use the code and assets only for educational or research purposes.
+
