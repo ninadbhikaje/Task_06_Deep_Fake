@@ -3,7 +3,7 @@
 This project transforms a data narrative about the **2024 Syracuse University Men’s Lacrosse season** into an AI-generated interview. It includes scripts for splitting the script into lines, generating synthetic voices with **pyttsx3**, and mixing them with **pydub** into a single audio file.  
 
 
-Step-by-step workflow (how I built it)
+** Step-by-step workflow (how I built it) **
 
 1. Prepare the narrative & interview script
 
@@ -42,3 +42,32 @@ Step-by-step workflow (how I built it)
 * Prompts and fact-check templates are in prompts/ (LLM polish prompts + “fact-check” prompts to prevent hallucinations).
 
 * Iterated prompts to force the LLM to cite only the provided stats and to avoid inventing historical comparisons.
+
+** Challenges & bottlenecks (what I ran into) **
+1. Environment restrictions (online notebooks)
+
+* Online Jupyter environments blocked system installs (no root), so ffmpeg and other system dependencies couldn’t be installed. That prevented reliable pydub + mp3/wav conversion in the cloud. Mitigation: moved the workflow to a local VS Code environment.
+
+2. Missing Python packages
+
+* pyttsx3, gTTS, pydub not preinstalled. Installing them locally fixed the problem. In an online environment these packages can be installed, but system TTS drivers often aren’t available.
+
+3. TTS library differences
+
+* pyttsx3 is offline but voice quality depends on OS voices. gTTS is cloud-based and higher quality but requires internet and can produce only .mp3 (and sometimes rate-limits). I provided both options so the repo is flexible.
+
+4. Empty or corrupt audio output
+
+* Caused by mismatched file extensions or missing ffmpeg. I debugged by checking file sizes and ensuring pydub loaded the right formats (from_mp3 vs from_wav).
+
+5. Video generation limitations
+
+* Creating a longer, high-quality deepfake video required paid/cloud services or more compute than available locally. I generated an 8-second lipsync demo (to prove the pipeline), but couldn’t produce longer footage due to subscription/purchase/compute/finance constraints.
+
+6. LLM hallucinations / factual drift
+
+* When polishing script lines, the LLM sometimes invented stats. I added a fact-check prompt that forces answers to use only provided bullet notes and to flag unsupported text as UNVERIFIED.
+
+7. Ethical considerations
+
+* I avoided impersonating real people, used a synthetic/neutral voice and avatar, and clearly labeled the outputs as AI-generated. This is documented in the repo.
