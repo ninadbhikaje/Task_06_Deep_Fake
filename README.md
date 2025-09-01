@@ -43,6 +43,35 @@ This project transforms a data narrative about the **2024 Syracuse University Me
 
 * Iterated prompts to force the LLM to cite only the provided stats and to avoid inventing historical comparisons.
 
+**How to run locally (Windows)**
+
+1. Clone the repo and open a terminal in the repo root.
+
+2. Create & activate a virtual environment (recommended):
+
+python -m venv venv
+.\venv\Scripts\Activate.ps1   # PowerShell
+
+
+3. Install Python dependencies:
+
+pip install pyttsx3 pydub
+
+
+4. Install ffmpeg and ensure it’s on your PATH:
+
+Download from https://ffmpeg.org
+ and add ...\ffmpeg\bin to PATH.
+
+5. Split, synthesize, and mix:
+
+python code/split_script.py
+python code/tts_pyttsx3.py
+python code/mixdown_pydub.py
+
+
+6. Video (Google Gemini Veo): Open the Google Gemini Veo AI and write a prompt to convert your audio file into a video format.
+
 **Challenges & bottlenecks (what I ran into)**
 1. Environment restrictions (online notebooks)
 
