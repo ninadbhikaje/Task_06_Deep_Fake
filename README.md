@@ -128,7 +128,7 @@ python code/mixdown_pydub.py
 
 1. Audio interview: audio/final_mix.wav — a full interview audio file matching the scripted dialogue.
 
-2. Deepfake video: One short test clip (video/lipsynced_8s.mp4) of 8 seconds demonstrating lipsync between the synthetic audio and a neutral avatar. I could not generate a longer video due to subscription/purchase/finance constraints (paid services or extra GPU time were required for longer/higher-quality output).
+2. Deepfake video: One short test clip (Syracuse_Lacrosse_Season_Review.mp4) of 8 seconds demonstrating lipsync between the synthetic audio and a neutral avatar. I could not generate a longer video due to subscription/purchase/finance constraints (paid services or extra GPU time were required for longer/higher-quality output).
 
 
 **Ethics, labeling, and responsible use**
