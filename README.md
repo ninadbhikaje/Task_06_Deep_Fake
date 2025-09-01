@@ -7,9 +7,9 @@ Step-by-step workflow (how I built it)
 
 1. Prepare the narrative & interview script
 
-Extracted season stats from the PDF and wrote a short “street-interview” script (host + analyst).
+* Extracted season stats from the PDF and wrote a short “street-interview” script (host + analyst).
 
-Put the script in script/interview_script.md.
+* Put the script in script/interview_script.md.
 
 2. Split script into segments
 
