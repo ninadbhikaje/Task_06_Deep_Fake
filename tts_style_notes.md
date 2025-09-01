@@ -1,4 +1,0 @@
-- Host voice: upbeat, clear, ~165 words/min
-- Analyst voice: calm, ~150 words/min
-- Keep sentences concise (6–12 words)
-- Insert ~300ms pauses between speaker turns
