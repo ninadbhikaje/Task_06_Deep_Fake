@@ -43,7 +43,7 @@ This project transforms a data narrative about the **2024 Syracuse University Me
 
 * Iterated prompts to force the LLM to cite only the provided stats and to avoid inventing historical comparisons.
 
-** Challenges & bottlenecks (what I ran into) **
+**Challenges & bottlenecks (what I ran into)**
 1. Environment restrictions (online notebooks)
 
 * Online Jupyter environments blocked system installs (no root), so ffmpeg and other system dependencies couldn’t be installed. That prevented reliable pydub + mp3/wav conversion in the cloud. Mitigation: moved the workflow to a local VS Code environment.
