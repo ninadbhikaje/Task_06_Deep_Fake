@@ -3,7 +3,7 @@
 This project transforms a data narrative about the **2024 Syracuse University Men’s Lacrosse season** into an AI-generated interview. It includes scripts for splitting the script into lines, generating synthetic voices with **pyttsx3**, and mixing them with **pydub** into a single audio file.  
 
 
-** Step-by-step workflow (how I built it) **
+**Step-by-step workflow (how I built it)**
 
 1. Prepare the narrative & interview script
 
