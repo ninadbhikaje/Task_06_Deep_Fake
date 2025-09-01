@@ -43,6 +43,29 @@ This project transforms a data narrative about the **2024 Syracuse University Me
 
 * Iterated prompts to force the LLM to cite only the provided stats and to avoid inventing historical comparisons.
 
+**Files in this repository (important ones)**
+
+README.md — this file (overview + run instructions)
+
+Script/interview_script.md — the host/analyst dialogue
+
+Prompts/ — templates for LLM polishing and fact-checking
+
+Code/split_script.py — splits the script into segments
+
+Code/tts_pyttsx3.py — local TTS generation script
+
+Code/tts_gtts.py — alternative gTTS script 
+
+Code/mixdown_pydub.py — concatenates audio segments into final mix
+
+audio/segments/ — generated per-line audio files
+
+audio/final_mix.wav — final combined interview audio
+
+video/ — lipsynced output, short clip
+
+
 **How to run locally (Windows)**
 
 1. Clone the repo and open a terminal in the repo root.
